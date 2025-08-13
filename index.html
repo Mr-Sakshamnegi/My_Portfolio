@@ -1,0 +1,325 @@
+<html>
+<head>
+<title>Resume Website </title> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  
+    
+</head>
+<body>
+
+<!--------------Header Section-------------->
+<section id="header">
+<div class="container text-center">
+<div class="user-box">
+<img src="u2.png" alt="Young man with a friendly expression, wearing a dark shirt, facing the camera directly. The background is a simple light color, keeping the focus on the subject. The overall tone is professional and approachable." class="img-fluid rounded-circle" style="max-width: 220px; height: auto; object-fit: cover;">
+<h1 id="animated-name" style="background: linear-gradient(90deg, #ff512f, #dd2476, #1fa2ff, #12d8fa, #a6ffcb); background-size: 300% 300%; -webkit-background-clip: text; -webkit-text-fill-color: transparent; animation: gradientMove 3s ease-in-out infinite;">Saksham Singh</h1>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const name = "Saksham Singh";
+    const el = document.getElementById("animated-name");
+    el.textContent = "";
+    let i = 0;
+    function type() {
+      if (i < name.length) {
+        el.textContent += name.charAt(i);
+        i++;
+        setTimeout(type, 100);
+      }
+    }
+    type();
+  });
+</script>
+<style>
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+</style>
+<p id="animated-title">Aspiring Software Developer || Frontend Developer</p>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const title = "Aspiring Software Developer || Frontend Developer";
+    const el = document.getElementById("animated-title");
+    let i = 0;
+    let typing = true;
+    let stayCount = 0;
+    const stayDuration = 18; // Number of cycles to stay before erasing (adjust for longer/shorter pause)
+
+    function typeTitle() {
+      if (typing) {
+        if (i < title.length) {
+          el.textContent += title.charAt(i);
+          i++;
+          setTimeout(typeTitle, 60);
+        } else {
+          typing = false;
+          stayCount = 0;
+          setTimeout(typeTitle, 1200); // Initial pause after typing
+        }
+      } else {
+        if (stayCount < stayDuration) {
+          stayCount++;
+          setTimeout(typeTitle, 120); // Stay visible for a while
+        } else if (i > 0) {
+          el.textContent = title.substring(0, i - 1);
+          i--;
+          setTimeout(typeTitle, 30);
+        } else {
+          typing = true;
+          setTimeout(typeTitle, 400); // Pause before typing again
+        }
+      }
+    }
+    el.textContent = "";
+    typeTitle();
+  });
+</script>
+</div>  
+</div>
+<a href="#about"> 
+<div class="scroll-btn">
+<div class="scroll-bar"><span> </span></div>
+</div>
+</a>
+</section>   
+<!----------User-Info Section----------------->
+  
+<section id="user-info">
+
+<div class="nav-bar">
+<nav class="navbar navbar-expand-lg">
+  <a class="navbar-brand" href="#"><B id="logo">S A k S H A M</B></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fa fa-bars"></i>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#top">HOME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">ABOUT ME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#resume">RESUME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#services">SERVICES</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#contact">CONTACT</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+</div>
+   
+    <!----------About-------->
+    
+<div class="about container" id="about">
+<div class="row">
+<div class="col-md-6 text-center">
+<img src="u1.png" class="profile-img">    
+</div>
+<div class="col-md-6">
+<h3>WHO AM I ?</h3>
+<p>
+  Hello, my name is <B>Saksham Singh</B>.Enthusiastic CSE graduate from Graphic Era Hill University with a strong foundation in <b>programming and web development</b>. Passionate about <b>coding, problem-solving, and building real-world applications</b>. Eager to enhance skills, gain hands-on experience, and contribute to innovative projects.
+</p>
+    
+<div class="skills-bar">
+<p>Programming Languages</p>
+<div class="progress">
+<div class="progress-bar" style="width: 85%;">85%</div>    
+</div>
+    
+<p>Frameworks and Libraries</p>
+<div class="progress">
+<div class="progress-bar" style="width: 80%;">80%</div>    
+</div>
+    
+<p>UI design</p>
+<div class="progress">
+<div class="progress-bar" style="width: 75%;">75%</div>    
+</div>
+    
+<p>Version Control System</p>
+<div class="progress">
+<div class="progress-bar" style="width: 50%;">50%</div>    
+</div>
+</div>
+</div>
+</div>  
+</div>
+    
+    <!---------------Social Icons---------------->
+    
+<div class="social-icons">   
+<ul>
+<a href="https://www.linkedin.com/in/saksham-singh-647019242"><li><i class="fa fa-linkedin"></i></li></a>    
+<a href="https://www.instagram.com/_saksham_negi?igsh=eXFpODdlaGhiMjdj"><li><i class="fa fa-Instagram"></i></li></a>     
+<a href="https://github.com/Mr-Sakshamnegi"><li><i class="fa fa-github"></i></li></a>  
+</ul>
+</div>
+    
+    <!-------------Resume------------->
+<div class="resume" id="resume">
+<div class="container">
+<div class="row">
+<div class="col-md-6">
+<h3 class="text-center">My Projects</h3>
+<ul class="timeline">
+<li>
+<h4>Sorting Visualizer</h4>    
+<p> It allows users to visually observe the step-by-step process of sorting, enhancing their understanding of algorithm behavior and efficiency.</p>
+<b>Languages used</b>-Html,Css,Java Script<br>
+<b>Github Link</b> - <a href="https://github.com/Mr-Sakshamnegi/Sorting-Visualizer">click me</a><br>
+</p>
+</li>
+    
+<li>
+<h4>Image Searching using an api</h4>    
+<p>I developed an Image Searching application using the Unsplash API, allowing users to search and view high-quality images based on their queries. .<br>
+<b>Languages used</b> - Html,Css,Java Script<br>
+<b>API Used</b> - Unsplash API<br>
+<b>Github Link</b> - <a href="//github.com/Mr-Sakshamnegi/Image-Searching-using-API">Click me</a>
+</p>
+</li>
+    
+<li>
+<h4>Food Recommendation system and nutrition value calculator Website</h4>    
+<p>
+  Developed a smart recommendation system that suggests meal based on user preferences, dietary needs, and nutritional goals<br>
+<b>Languages Used</b> - Html, CSS, Java Script, Node JS, Mongo DB, Machine Learning<br>
+<b>Github Link</b> - <a href="https://github.com/Mr-Sakshamnegi/Food-Website">Click me</a><br>
+</p>
+</li>
+</ul>
+</div>   
+    
+    
+<div class="col-md-6">
+<h3 class="text-center">My Education</h3>
+<ul class="timeline">
+<li>
+<h4><span>2025 - </span> Bachelor Of Technology</h4>    
+<p>
+Graduated with a B.Tech degree in Computer Science and Engineering<br>
+<b>University</b> - Graphic Era Hill University,Dehradun<br>
+<b>Session</b> - 2021 - 2025<br>
+<b>Cgpa</b> -7.2/10
+</p>
+</li>
+    
+<li>
+<h4><span>2021 - </span> Intermediate (HSC)</h4>    
+<p>
+I had Done my Intermediate from St. Joseph's Convent School(ISC board).<br>
+<b>Institute</b> - St. Joseph's Convent School<br>
+<b>Session</b> - 2019-2021<br>
+<b>Aggregate</b> - 85.00%
+</p>
+</li>
+    
+<li>
+<h4><span>2019 - </span> High School (SSC)</h4>    
+<p>
+  I had Done my High School from St. Joseph's Convent School(ICSE board).<br>
+<b>Institute</b> - St. Joseph's Convent School<br>
+<b>Session</b> - 2018 - 2019<br>
+<b>Aggregate</b> - 80.00%
+</p>
+</li>
+</ul>
+</div>     
+</div>    
+</div>    
+</div>
+    
+<!-------------Services------------->
+    
+<div class="services" id="services">
+<div class="container">
+<h1 class="text-center">My Skills</h1>
+<p class="text-center">I specialize in frontend development with strong skills in HTML, CSS, and JavaScript, along with experience in frameworks like React. My focus is on creating responsive, user-friendly web interfaces that deliver a seamless user experience. </p>
+    
+<div class="row">
+<div class="col-md-4">
+<div class="services-box">
+<i class=" fa fa-laptop"></i><span>Languages</span>
+<p>C/C++, HTML,CSS,JAVA SCRIPT,PHP, PYTHON ,SQL.</p>
+</div>    
+</div> 
+    
+<div class="col-md-4">
+<div class="services-box">
+<i class=" fa fa-rocket"></i><span>Platform</span>
+<p>Windows , Linux</p>
+</div>    
+</div> 
+    
+<div class="col-md-4">
+<div class="services-box">
+<i class="fa fa-line-chart"></i><span>GDSC</span>
+<p>I'm part of a Google Development Student Club and received many skills Badges and some amazing Goodies from GDSC.You can check Skills Badges-<a href="https://www.cloudskillsboost.google/public_profiles/3c86c6f8-1b85-41cd-8619-7901d516434b">Click</a></p>
+</div>    
+</div> 
+</div>
+</div>    
+</div>
+    
+    
+<!-------------Contact----------------->
+    
+<div class="contact" id="contact">
+<div class="container text-center">
+<h1>Contact Me</h1> 
+<p class="text-center">Feel free to reach out if you have any questions, project inquiries, or just want to connect. I'm always open to discussing new opportunities and collaborations. You can contact me via email,contact number or my instagram id given below. Looking forward to hearing from you!</p>
+    
+<div class="row">
+<div class="col-md-4">
+<i class="fa fa-phone"></i>
+<p>+91 8445232958</p>
+</div> 
+<div class="col-md-4">
+<i class="fa fa-envelope"></i>
+<p>saksham.negi.844@gmail.com</p>
+</div> 
+<div class="col-md-4">
+<i class="fa fa-Instagram"></i>
+<p>_saksham_negi</p>
+</div> 
+</div>
+<a href="Resume_Saksham.pdf" target="_blank">
+  <button type="button" class="btn btn-primary">
+    <i class="fa fa-download"></i> Resume
+  </button>
+</a>
+
+
+</div> 
+<div class="footer text-center">
+<p>Thank you for visiting my website! Stay connected by following me on LinkedIn, GitHub, and Instagram. <i class="fa fa-heart-o"></i>by Saksham Singh</p>
+</div>
+</div>
+</section>
+    
+    
+    
+<!-------------------Smooth Scroll------------------->
+<script src="smooth-scroll.js"></script>
+    
+  <script>
+	var scroll = new SmoothScroll('a[href*="#"]');
+</script>  
+    
+    
+</body>
+</html>
