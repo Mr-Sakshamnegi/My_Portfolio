@@ -1,3 +1,4 @@
+
 (function (root, factory) {
 	if (typeof define === 'function' && define.amd) {
 		define([], (function () {
@@ -612,15 +613,3 @@
 	return SmoothScroll;
 
 }));
-
-function animateProgressBars() {
-  var bars = document.querySelectorAll('.progress-bar');
-  bars.forEach(function(bar) {
-    var targetWidth = bar.getAttribute('data-width');
-    bar.style.width = '0';
-    setTimeout(function() {
-      bar.classList.add('animate');
-      bar.style.width = targetWidth;
-    }, 200);
-  });
-}
